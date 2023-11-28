@@ -25,7 +25,15 @@ export default function RootLayout({ children }) {
         <main className='flex-1'>
           <section className={inter.className}>{children}</section>
         </main>
-        <footer className='flex justify-center p-3 border-t'>
+        <footer className='flex justify-center p-3 border-t relative'>
+          <div className='p-4 bg-gray-400 absolute bottom-16 right-6 rounded-full shadow'>
+            <div
+              className=' flex flex-col justify-between  w-6 h-5 sm:hidden' >
+              <span className='h-1 w-full bg-black rounded-lg'></span>
+              <span className='h-1 w-full bg-black rounded-lg'></span>
+              <span className='h-1 w-full bg-black rounded-lg'></span>
+            </div>
+          </div>
           icon
         </footer>
       </body>
