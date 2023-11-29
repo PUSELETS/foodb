@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-screen text-gray-900">
+      <body className="flex flex-col text-gray-900">
         <Head>
           <title>Tweeter</title>
         </Head>

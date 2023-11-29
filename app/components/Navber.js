@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navber() {
   return (
-    <div className='w-3/5 h-screen bg-red-300'>
+    <div className='w-3/5 h-[88svh] bg-red-300'>
         <ul className=''>
             <li className=''>Burgger</li>
             <li className=''>Spaghetti</li>
