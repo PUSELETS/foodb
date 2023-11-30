@@ -17,7 +17,7 @@ export default function Layout({ children }) {
                 </p>
                 <div className='absolute w-3/5 top-14 left-[0] overflow-hidden'>
                     <div className='relative w-full'>
-                        <MotionConfig transition={{ duration: 0.15 }}>
+                        <MotionConfig transition={{ duration: 0.3 }}>
                             <ResisebleDiv>
                                 <ul
                                     className={`${menu ? 'flex' : 'hidden'} h-full w-full flex-col bg-red-300 rounded-lg`}>
