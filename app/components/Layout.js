@@ -2,7 +2,6 @@
 import React from 'react'
 import { useStateContext } from '../context/StateContext'
 import Link from 'next/link'
-import useMeasure from 'react-use-measure'
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion'
 
 
@@ -55,33 +54,4 @@ export default function Layout({ children }) {
     )
 }
 
-function ResisebleDiv({ children }) {
 
-    const [ref, { height }] = useMeasure()
-
-    return (
-        <AnimatePresence mode='wait'>
-            <motion.div   >
-                <div
-                    className='absolute w-full p-1 py-1 rounded-lg top-0 left-[0]'>
-                    {children}
-                </div>
-            </motion.div>
-        </AnimatePresence>
-    )
-}
-
-/*Replacer function to JSON.stringfy*/
-
-const ignoreCircularReference = () => {
-
-    const seen = new WeakSet();
-    return (key, value) => {
-        if (key.startsWith("_")) return;
-        if (typeof value === "object" && value !== null) {
-            if (seen.has(value)) return;
-            seen.add(value);
-        }
-        return value;
-    }
-};
