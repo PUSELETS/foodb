@@ -34,7 +34,7 @@ export default function Layout({ children }) {
                     </AnimatePresence>
                 </MotionConfig>
             </header>
-            <main className='flex-1'>
+            <main className='flex-1 overflow-scroll'>
                 {children}
             </main>
             <footer className='flex justify-center p-3 border-t relative'>
