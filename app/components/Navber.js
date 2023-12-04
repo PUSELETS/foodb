@@ -11,7 +11,7 @@ export default function Navber({ data }) {
     <>
       <Swiper
         spaceBetween={20}
-        slidesPerView={2}
+        slidesPerView={1}
       >
         {
           data?.map((product, i) => {
