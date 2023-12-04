@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 
 export const getAllAdminProducts = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/admin/all-product", {
+    const res = await fetch("https://foodb-six.vercel.app/api/admin/all-product", {
       method: "GET",
       cache: 'no-store',
     });
