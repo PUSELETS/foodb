@@ -1,9 +1,10 @@
+"use client"
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 
-export default function Navber() {
+export default function Navber({data}) {
 
 
   return (
@@ -12,18 +13,11 @@ export default function Navber() {
         !data ? (
           <p>Loading...</p>
         ) : (
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={2}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            {
-              data?.map((product) => {
-                return (
-
-
-                  <SwiperSlide>
+          <div className='@container'>
+            <div className='grid grid-cols-2 gap-2 mt-5 w-full'>
+              {
+                data?.map((product) => {
+                  return (
                     <div
                       className='@container border shadow'
                     >
@@ -37,13 +31,11 @@ export default function Navber() {
                         <p className="font-extrabold text-black mt-1">R{product.price}</p>
                       </div>
                     </div>
-                  </SwiperSlide>
-
-
-                )
-              })
-            }
-          </Swiper>
+                  )
+                })
+              }
+            </div>
+          </div>
         )
       }
     </div>
