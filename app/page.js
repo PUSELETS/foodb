@@ -20,8 +20,8 @@ export const getAllAdminProducts = async () => {
 };
 
 export default async function AdminAllProducts() {
- 
+
   const allAdminProducts = await getAllAdminProducts()
 
-  return <Navber data={allAdminProducts && allAdminProducts.data}/>
+  return <Navber data={allAdminProducts && allAdminProducts.data} />
 }
