@@ -16,9 +16,10 @@ export default function Navber({data}) {
           <div className='@container'>
             <div className='grid grid-cols-2 gap-2 mt-5 w-full'>
               {
-                data?.map((product) => {
+                data?.map((product , i) => {
                   return (
                     <div
+                    key={i}
                       className='@container border shadow'
                     >
                       <div className="cursor-pointer text-blue-500">
