@@ -49,7 +49,7 @@ export default function Home({ data }) {
                 <div className='col-span-10'>
                   <h1 className="slick-title sm:text-[12px] sm:mb-0">Cool Fashion</h1>
 
-                  <p className="lead text-white mt-3 mb-5">Little fashion template comes with total 8 HTML pages provided by Tooplate website.</p>
+                  <p className="lead text-white mt-1 mb-3">Little fashion template comes with total 8 HTML pages provided by Tooplate website.</p>
 
                   <a href="about.html" className="btn custom-btn">Learn more about us</a>
                 </div>
@@ -71,7 +71,7 @@ export default function Home({ data }) {
                 <div className='col-span-10'>
                   <h1 className="slick-title sm:text-[12px] sm:mb-0">New Design</h1>
 
-                  <p className="lead text-white mt-3 mb-5">Please share this Little Fashion template to your friends. Thank you for supporting us.</p>
+                  <p className="lead text-white mt-1 mb-3">Please share this Little Fashion template to your friends. Thank you for supporting us.</p>
 
                   <a href="about.html" className="btn custom-btn">Explore products</a>
                 </div>
@@ -93,7 +93,7 @@ export default function Home({ data }) {
                 <div className='col-span-10'>
                   <h1 className="slick-title sm:text-[12px] sm:mb-0">Talk to us</h1>
 
-                  <p className="lead text-white  mt-3 mb-5">Tooplate is one of the best HTML CSS template websites for everyone.</p>
+                  <p className="lead text-white  mt-1 mb-3">Tooplate is one of the best HTML CSS template websites for everyone.</p>
 
                   <a href="about.html" className="btn custom-btn">Work with us</a>
                 </div>
