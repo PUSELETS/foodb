@@ -1,4 +1,4 @@
-import Navber from "./components/Navber";
+import Home from "./components/Home";
 
 
 export const fetchCache = 'force-no-store';
@@ -23,5 +23,5 @@ export default async function AdminAllProducts() {
  
   const allAdminProducts = await getAllAdminProducts()
 
-  return <Navber data={allAdminProducts && allAdminProducts.data}/>
+  return <Home data={allAdminProducts && allAdminProducts.data}/>
 }

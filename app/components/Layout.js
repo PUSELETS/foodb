@@ -3,7 +3,8 @@ import React from 'react'
 import { useStateContext } from '../context/StateContext'
 import Link from 'next/link'
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion'
-
+import "@radix-ui/themes/styles.css"
+import { Theme } from '@radix-ui/themes'
 
 export default function Layout({ children }) {
 
@@ -37,19 +38,6 @@ export default function Layout({ children }) {
             <main className='flex-1 overflow-scroll'>
                 {children}
             </main>
-            <footer className='flex justify-center p-3 border-t relative'>
-                <div
-                    onClick={() => setMenu(!menu)}
-                    className='p-[10px] bg-gray-400  absolute bottom-16 right-6 rounded-full border-black sm:hidden'>
-                    <div
-                        className=' flex flex-col justify-between  w-[18px] h-[18px] sm:hidden' >
-                        <span className='h-[2px] w-full bg-black rounded-lg'></span>
-                        <span className='h-[2px] w-full bg-black rounded-lg'></span>
-                        <span className='h-[2px] w-full bg-black rounded-lg'></span>
-                    </div>
-                </div>
-                icon
-            </footer>
         </>
     )
 }

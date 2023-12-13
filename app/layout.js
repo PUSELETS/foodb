@@ -3,8 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Layout from './components/Layout'
 import { StateContext } from './context/StateContext'
-import "@radix-ui/themes/styles.css"
-import { Theme } from '@radix-ui/themes'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,10 +17,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <StateContext>
-        <body className="flex flex-col text-gray-900">
-            <Layout>
-              <section className={inter.className}>{children}</section>
-            </Layout>
+        <body className="flex flex-col text-gray-900 overflow-x-hidden">
+          <section className={inter.className}>
+              <Layout>
+                {children}
+              </Layout>
+          </section>
         </body>
       </StateContext>
     </html>
