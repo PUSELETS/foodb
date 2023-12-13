@@ -47,7 +47,7 @@ export default function Home({ data }) {
             <div className='container'>
               <div className='grid grid-cols-12 gap-4'>
                 <div className='col-span-10'>
-                  <h1 className="slick-title sm:text-[32px] sm:mb-0">Cool Fashion</h1>
+                  <h1 className="slick-title sm:text-[12px] sm:mb-0">Cool Fashion</h1>
 
                   <p className="lead text-white mt-3 mb-5">Little fashion template comes with total 8 HTML pages provided by Tooplate website.</p>
 
@@ -69,7 +69,7 @@ export default function Home({ data }) {
             <div className='container'>
               <div className='grid grid-cols-12 gap-4'>
                 <div className='col-span-10'>
-                  <h1 className="slick-title sm:text-[32px] sm:mb-0">New Design</h1>
+                  <h1 className="slick-title sm:text-[12px] sm:mb-0">New Design</h1>
 
                   <p className="lead text-white mt-3 mb-5">Please share this Little Fashion template to your friends. Thank you for supporting us.</p>
 
@@ -91,7 +91,7 @@ export default function Home({ data }) {
             <div className='container'>
               <div className='grid grid-cols-12 gap-4'>
                 <div className='col-span-10'>
-                  <h1 className="slick-title sm:text-[32px] sm:mb-0">Talk to us</h1>
+                  <h1 className="slick-title sm:text-[12px] sm:mb-0">Talk to us</h1>
 
                   <p className="lead text-white  mt-3 mb-5">Tooplate is one of the best HTML CSS template websites for everyone.</p>
 
