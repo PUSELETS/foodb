@@ -72,7 +72,7 @@ function User() {
                 <label className='text-sm font-medium text-gray-900'>Name</label>
                 <input
                     autoFocus
-                    className='mt-2 block w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-900 shadow-sm sm:leading-6'
+                    className=' block w-full rounded-md border border-gray-300 text-sm text-gray-900 shadow-sm sm:leading-6'
                     type='text'
                 ></input>
             </div>
