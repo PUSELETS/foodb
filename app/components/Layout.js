@@ -28,7 +28,7 @@ export default function Layout({ children }) {
                                 </Dialog.Close>
                             </div>
                             <div className='mt-8'>
-                                <User />
+                                
                             </div>
                             <div className='text-right mt-8 space-x-6'>
                                 <button className=' rounded hover:text-gray-600 px-4 py-2 text-gray-500 text-sm font-medium' >Cancel</button>
