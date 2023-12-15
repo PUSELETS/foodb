@@ -20,7 +20,7 @@ export default function Layout({ children }) {
                     </Dialog.Trigger>
                     <Dialog.Portal className='z-10'>
                         <Dialog.Overlay className='fixed inset-0 bg-black/50 z-10' />
-                        <Dialog.Content className='fixed z-10 w-full max-w-md sm:max-w-xs top-1/2 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-md bg-white p-8 text-gray-900 shadow'>
+                        <Dialog.Content className='fixed z-10 w-full top-1/2 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-md bg-white p-8 text-gray-900 shadow'>
                             <div className='flex justify-between items-center'>
                                 <h2 className='text-xl'>Edit contact</h2>
                                 <Dialog.Close className='text-gray-400 hover:text-gray-500'>
