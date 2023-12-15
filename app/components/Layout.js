@@ -71,7 +71,6 @@ function User() {
             <div>
                 <label className='text-sm font-medium text-gray-900'>Name</label>
                 <input
-                    autoFocus
                     className=' block w-full rounded-md border border-gray-300 text-sm text-gray-900 shadow-sm sm:leading-6'
                     type='text'
                 ></input>
