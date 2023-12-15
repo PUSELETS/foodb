@@ -28,7 +28,7 @@ export default function Layout({ children }) {
                                 </Dialog.Close>
                             </div>
                             <div className='mt-8'>
-                                
+                                <User />
                             </div>
                             <div className='text-right mt-8 space-x-6'>
                                 <button className=' rounded hover:text-gray-600 px-4 py-2 text-gray-500 text-sm font-medium' >Cancel</button>
@@ -72,22 +72,6 @@ function User() {
                 <label className='text-sm font-medium text-gray-900'>Name</label>
                 <input
                     autoFocus
-                    className='mt-2 block w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-900 shadow-sm sm:leading-6'
-                    type='text'
-                ></input>
-            </div>
-            <div>
-                <label className='text-sm font-medium text-gray-900'>Role</label>
-                <input
-
-                    className='mt-2 block w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-900 shadow-sm sm:leading-6'
-                    type='text'
-                ></input>
-            </div>
-            <div>
-                <label className='text-sm font-medium text-gray-900'>Email address</label>
-                <input
-
                     className='mt-2 block w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-900 shadow-sm sm:leading-6'
                     type='text'
                 ></input>
