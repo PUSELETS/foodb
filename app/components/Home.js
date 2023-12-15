@@ -5,8 +5,9 @@ import { Pagination, EffectFade, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import Image from 'next/image';
 import photo from './photo.jpg'
-import it from './it.jpg'
-import work from './work.jpeg'
+import it from './it.jpg';
+import work from './work.jpeg';
+
 
 
 import 'swiper/css';
@@ -52,28 +53,6 @@ export default function Home({ data }) {
                   <p className="lead text-white mt-1 mb-3">Little fashion template comes with total 8 HTML pages provided by Tooplate website.</p>
 
                   <a href="about.html" className="btn custom-btn">Learn more about us</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className='relative'>
-          <Image
-            src={work}
-            maxwidth={'100%'} height={'auto'}
-            alt=''
-          ></Image>
-          <div className="slick-bottom ">
-            <div className='container'>
-              <div className='grid grid-cols-12 gap-4'>
-                <div className='col-span-10'>
-                  <h1 className="slick-title sm:text-[12px] sm:mb-0">New Design</h1>
-
-                  <p className="lead text-white mt-1 mb-3">Please share this Little Fashion template to your friends. Thank you for supporting us.</p>
-
-                  <a href="about.html" className="btn custom-btn">Explore products</a>
                 </div>
               </div>
             </div>
