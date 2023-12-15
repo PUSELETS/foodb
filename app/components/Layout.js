@@ -71,7 +71,23 @@ function User() {
             <div>
                 <label className='text-sm font-medium text-gray-900'>Name</label>
                 <input
-                    className=' block w-full rounded-md border border-gray-300 text-sm text-gray-900 shadow-sm sm:leading-6'
+                    className='mt-2 block w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-900 shadow-sm sm:leading-6'
+                    type='text'
+                ></input>
+            </div>
+            <div>
+                <label className='text-sm font-medium text-gray-900'>Role</label>
+                <input
+
+                    className='mt-2 block w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-900 shadow-sm sm:leading-6'
+                    type='text'
+                ></input>
+            </div>
+            <div>
+                <label className='text-sm font-medium text-gray-900'>Email address</label>
+                <input
+
+                    className='mt-2 block w-full rounded-md border border-gray-300 px-2 py-1.5 text-sm text-gray-900 shadow-sm sm:leading-6'
                     type='text'
                 ></input>
             </div>
