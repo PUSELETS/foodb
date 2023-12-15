@@ -23,11 +23,18 @@ export default function Layout({ children }) {
                         <Dialog.Content className='fixed z-10 w-full max-w-md top-1/2 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-md bg-white p-8 text-gray-900 shadow'>
                             <div className='flex justify-between items-center'>
                                 <h2 className='text-xl'>Edit contact</h2>
-                                <button className='text-gray-400 hover:text-gray-500'>
+                                <Dialog.Close className='text-gray-400 hover:text-gray-500'>
                                     exit
-                                </button>
+                                </Dialog.Close>
                             </div>
+                            <div className='mt-8'>
                             <User />
+                            </div>
+                            <div className='text-right mt-8 space-x-6'>
+                                <button className=' rounded hover:text-gray-600 px-4 py-2 text-gray-500 text-sm font-medium' >Cancel</button>
+                                <button className='bg-green-500 hover:bg-green-600 rounded px-4 py-2 text-white text-sm font-medium' >Save</button>
+                            </div>
+                            
                         </Dialog.Content>
                     </Dialog.Portal>
                 </Dialog.Root>
@@ -85,6 +92,7 @@ function User() {
                     type='text'
                 ></input>
             </div>
+
         </div>
     )
 }
