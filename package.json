@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/themes": "^2.0.1",
     "framer-motion": "^10.16.5",
     "mongoose": "^7.4.5",

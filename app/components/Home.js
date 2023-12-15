@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectFade, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import Image from 'next/image';
-import photo from './photo.jpeg'
-import it from './it.jpeg'
+import photo from './photo.jpg'
+import it from './it.jpg'
 import work from './work.jpeg'
 
 

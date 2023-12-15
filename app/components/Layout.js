@@ -4,6 +4,7 @@ import { useStateContext } from '../context/StateContext'
 import Link from 'next/link'
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion'
 import "@radix-ui/themes/styles.css"
+import { Dialog } from '@radix-ui/react-dialog'
 import { Theme } from '@radix-ui/themes'
 
 export default function Layout({ children }) {
@@ -13,9 +14,9 @@ export default function Layout({ children }) {
     return (
         <>
             <header className='flex items-center px-4 py-3 border-b relative '>
-                <p className='ml-6 text-lg font-extrabold'>
+                <a className='ml-6 text-lg font-extrabold'>
                     FOOD
-                </p>
+                </a>
                 <MotionConfig transition={{ duration: 0.3 }}>
                     <AnimatePresence>
                         <motion.div
