@@ -138,7 +138,8 @@ a:hover {
 }
 
 .lead {
-  font-size: 16px;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-thin);
 }
 
 .slick-title {
@@ -234,4 +235,26 @@ a:hover {
 .nav-link:focus, 
 .nav-link:hover {
   color: var(--p-color);
+}
+
+.custom-link {
+  color: var(--p-color);
+  font-size: var(--custom-link-font-size);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.custom-link i {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 100%;
+  transition: all 0.3s;
+  line-height: normal;
+}
+
+.custom-link:hover i {
+  opacity: 1;
+  left: 101%;
 }

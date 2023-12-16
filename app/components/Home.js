@@ -1,12 +1,13 @@
 "use client"
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, EffectFade, A11y, Autoplay } from 'swiper/modules';
+import { EffectFade, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import Image from 'next/image';
 import photo from './photo.jpg'
 import it from './it.jpg';
-import work from './work.jpeg';
+import work from './work.jpg';
+import peg from './peg.jpg';
 
 
 
@@ -27,8 +28,7 @@ export default function Home({ data }) {
     <>
       <Swiper
         slidesPerView={1}
-        modules={[Pagination, A11y, Autoplay, EffectFade]}
-        pagination={{ clickable: true }}
+        modules={[A11y, Autoplay, EffectFade]}
         effect='fade'
         fadeEffect={{
           crossFade: true
@@ -122,6 +122,31 @@ export default function Home({ data }) {
             </div>
           </div>
 
+        </div>
+      </section>
+      <section className='bg-[#f0f8ff]'>
+        <div className='p-0 container mx-auto'>
+          <div className='grid grid-cols-12 items-center'>
+            <div className='sm:col-span-6 col-span-12'>
+              <Image
+                src={peg}
+                maxwidth={'100%'} height={'auto'}
+                alt=''
+              ></Image>
+            </div>
+            <div className='sm:col-span-6 col-span-12'>
+              <div className='px-5 py-5 sm:py-0'>
+                <h2 className="mb-4"><span>Retail</span> shop owners</h2>
+
+                <p className="lead mb-4">Credits go to Unsplash and FreePik websites for images used in this Little Fashion by Tooplate.</p>
+
+                <a href="/" className="custom-link">
+                  Explore Products
+                  <i className="bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
